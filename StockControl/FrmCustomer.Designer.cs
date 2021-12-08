@@ -46,7 +46,7 @@ namespace StockControl
             // lblUser
             // 
             this.lblUser.AutoSize = true;
-            this.lblUser.Location = new System.Drawing.Point(115, 226);
+            this.lblUser.Location = new System.Drawing.Point(90, 178);
             this.lblUser.Name = "lblUser";
             this.lblUser.Size = new System.Drawing.Size(53, 15);
             this.lblUser.TabIndex = 46;
@@ -54,7 +54,7 @@ namespace StockControl
             // 
             // txtUser
             // 
-            this.txtUser.Location = new System.Drawing.Point(115, 244);
+            this.txtUser.Location = new System.Drawing.Point(90, 196);
             this.txtUser.Name = "txtUser";
             this.txtUser.Size = new System.Drawing.Size(100, 23);
             this.txtUser.TabIndex = 45;
@@ -62,7 +62,7 @@ namespace StockControl
             // lblPrice
             // 
             this.lblPrice.AutoSize = true;
-            this.lblPrice.Location = new System.Drawing.Point(361, 166);
+            this.lblPrice.Location = new System.Drawing.Point(336, 118);
             this.lblPrice.Name = "lblPrice";
             this.lblPrice.Size = new System.Drawing.Size(33, 15);
             this.lblPrice.TabIndex = 44;
@@ -71,7 +71,7 @@ namespace StockControl
             // lblProdName
             // 
             this.lblProdName.AutoSize = true;
-            this.lblProdName.Location = new System.Drawing.Point(115, 166);
+            this.lblProdName.Location = new System.Drawing.Point(90, 118);
             this.lblProdName.Name = "lblProdName";
             this.lblProdName.Size = new System.Drawing.Size(84, 15);
             this.lblProdName.TabIndex = 43;
@@ -80,7 +80,7 @@ namespace StockControl
             // lblStock
             // 
             this.lblStock.AutoSize = true;
-            this.lblStock.Location = new System.Drawing.Point(241, 166);
+            this.lblStock.Location = new System.Drawing.Point(216, 118);
             this.lblStock.Name = "lblStock";
             this.lblStock.Size = new System.Drawing.Size(49, 15);
             this.lblStock.TabIndex = 42;
@@ -88,21 +88,21 @@ namespace StockControl
             // 
             // txtPrice
             // 
-            this.txtPrice.Location = new System.Drawing.Point(361, 184);
+            this.txtPrice.Location = new System.Drawing.Point(336, 136);
             this.txtPrice.Name = "txtPrice";
             this.txtPrice.Size = new System.Drawing.Size(100, 23);
             this.txtPrice.TabIndex = 41;
             // 
             // txtProdName
             // 
-            this.txtProdName.Location = new System.Drawing.Point(115, 184);
+            this.txtProdName.Location = new System.Drawing.Point(90, 136);
             this.txtProdName.Name = "txtProdName";
             this.txtProdName.Size = new System.Drawing.Size(100, 23);
             this.txtProdName.TabIndex = 40;
             // 
             // txtHowMany
             // 
-            this.txtHowMany.Location = new System.Drawing.Point(241, 184);
+            this.txtHowMany.Location = new System.Drawing.Point(216, 136);
             this.txtHowMany.Name = "txtHowMany";
             this.txtHowMany.Size = new System.Drawing.Size(100, 23);
             this.txtHowMany.TabIndex = 39;
@@ -110,7 +110,7 @@ namespace StockControl
             // lblName
             // 
             this.lblName.AutoSize = true;
-            this.lblName.Location = new System.Drawing.Point(115, 99);
+            this.lblName.Location = new System.Drawing.Point(90, 51);
             this.lblName.Name = "lblName";
             this.lblName.Size = new System.Drawing.Size(39, 15);
             this.lblName.TabIndex = 38;
@@ -118,7 +118,7 @@ namespace StockControl
             // 
             // btnBuy
             // 
-            this.btnBuy.Location = new System.Drawing.Point(241, 243);
+            this.btnBuy.Location = new System.Drawing.Point(216, 195);
             this.btnBuy.Name = "btnBuy";
             this.btnBuy.Size = new System.Drawing.Size(100, 23);
             this.btnBuy.TabIndex = 37;
@@ -128,7 +128,7 @@ namespace StockControl
             // 
             // txtName
             // 
-            this.txtName.Location = new System.Drawing.Point(115, 117);
+            this.txtName.Location = new System.Drawing.Point(90, 69);
             this.txtName.Name = "txtName";
             this.txtName.Size = new System.Drawing.Size(100, 23);
             this.txtName.TabIndex = 36;
@@ -136,7 +136,7 @@ namespace StockControl
             // 
             // btnSearch
             // 
-            this.btnSearch.Location = new System.Drawing.Point(241, 117);
+            this.btnSearch.Location = new System.Drawing.Point(216, 69);
             this.btnSearch.Name = "btnSearch";
             this.btnSearch.Size = new System.Drawing.Size(100, 23);
             this.btnSearch.TabIndex = 35;
@@ -149,7 +149,7 @@ namespace StockControl
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.ClientSize = new System.Drawing.Size(729, 350);
+            this.ClientSize = new System.Drawing.Size(503, 282);
             this.Controls.Add(this.lblUser);
             this.Controls.Add(this.txtUser);
             this.Controls.Add(this.lblPrice);
