@@ -176,7 +176,7 @@ namespace StockControl
             // 
             // BtnViewRec
             // 
-            this.BtnViewRec.Location = new System.Drawing.Point(442, 393);
+            this.BtnViewRec.Location = new System.Drawing.Point(442, 469);
             this.BtnViewRec.Name = "BtnViewRec";
             this.BtnViewRec.Size = new System.Drawing.Size(97, 23);
             this.BtnViewRec.TabIndex = 14;
