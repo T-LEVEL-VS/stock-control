@@ -61,7 +61,7 @@ namespace StockControl
 
 
 
-            string connectionString = "Data Source=(localdb)\\MSSQLLocalDB;Initial Catalog=StockControl;Integrated Security=True;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False";
+            string connectionString = "Server=tcp:jkf2331659.database.windows.net,1433;Initial Catalog=StockControl;Persist Security Info=False;User ID=JKF2331659;Password=Barnsley123!;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;";
 
 
 
@@ -105,7 +105,7 @@ namespace StockControl
             int ID;
             ID = Convert.ToInt32(txtId.Text);
 
-            string connectionString = "Data Source=(localdb)\\MSSQLLocalDB;Initial Catalog=StockControl;Integrated Security=True;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False";
+            string connectionString = "Server=tcp:jkf2331659.database.windows.net,1433;Initial Catalog=StockControl;Persist Security Info=False;User ID=JKF2331659;Password=Barnsley123!;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;";
 
 
 
@@ -139,7 +139,7 @@ namespace StockControl
             ProductDesc = Convert.ToString(txtProdDescription.Text);
             Cost = Convert.ToDecimal(txtCost.Text);
 
-            string connectionString = "Data Source=(localdb)\\MSSQLLocalDB;Initial Catalog=StockControl;Integrated Security=True;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False";
+            string connectionString = "Server=tcp:jkf2331659.database.windows.net,1433;Initial Catalog=StockControl;Persist Security Info=False;User ID=JKF2331659;Password=Barnsley123!;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;";
 
 
 
@@ -166,7 +166,7 @@ namespace StockControl
         private void BtnViewRec_Click(object sender, EventArgs e)
         {
             {
-                string connectionString = "Data Source=(localdb)\\MSSQLLocalDB;Initial Catalog=StockControl;Integrated Security=True;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False";
+                string connectionString = "Server=tcp:jkf2331659.database.windows.net,1433;Initial Catalog=StockControl;Persist Security Info=False;User ID=JKF2331659;Password=Barnsley123!;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;";
 
                 {
                     int ID;
@@ -204,7 +204,7 @@ namespace StockControl
         private void button1_Click_1(object sender, EventArgs e)
         {
             {
-                string connectionString = "Data Source=(localdb)\\MSSQLLocalDB;Initial Catalog=StockControl;Integrated Security=True;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False";
+                string connectionString = "Server=tcp:jkf2331659.database.windows.net,1433;Initial Catalog=StockControl;Persist Security Info=False;User ID=JKF2331659;Password=Barnsley123!;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;";
 
                 {
                     int ID;
@@ -240,7 +240,7 @@ namespace StockControl
         private void button1_Click_2(object sender, EventArgs e)
         {
             {
-                string connectionString = "Data Source=(localdb)\\MSSQLLocalDB;Initial Catalog=StockControl;Integrated Security=True;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False";
+                string connectionString = "Server=tcp:jkf2331659.database.windows.net,1433;Initial Catalog=StockControl;Persist Security Info=False;User ID=JKF2331659;Password=Barnsley123!;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;";
 
                 {
                     int ID;
@@ -290,7 +290,7 @@ namespace StockControl
         private void btnSearch_Click(object sender, EventArgs e)
         {
             {
-                string connectionString = "Data Source=(localdb)\\MSSQLLocalDB;Initial Catalog=StockControl;Integrated Security=True;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False";
+                string connectionString = "Server=tcp:jkf2331659.database.windows.net,1433;Initial Catalog=StockControl;Persist Security Info=False;User ID=JKF2331659;Password=Barnsley123!;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;";
 
                 {
                     int ID;
