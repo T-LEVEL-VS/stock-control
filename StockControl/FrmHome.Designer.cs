@@ -65,15 +65,16 @@ namespace StockControl
             this.label2.Text = "HomePage";
             this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
-            // FrmSignIn
+            // FrmHome
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.Btn_Customer);
             this.Controls.Add(this.Btn_StockControl);
-            this.Name = "FrmSignIn";
+            this.Name = "FrmHome";
             this.Text = "Form2";
             this.Load += new System.EventHandler(this.Form2_Load);
             this.ResumeLayout(false);

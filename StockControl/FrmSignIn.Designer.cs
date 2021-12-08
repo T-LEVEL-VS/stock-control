@@ -34,6 +34,7 @@ namespace StockControl
             this.BtnSignIN = new System.Windows.Forms.Button();
             this.Lbl_CustomerName = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // textBox1
@@ -78,11 +79,23 @@ namespace StockControl
             this.label1.TabIndex = 4;
             this.label1.Text = "Password";
             // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Showcard Gothic", 48F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label2.Location = new System.Drawing.Point(201, 47);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(343, 79);
+            this.label2.TabIndex = 38;
+            this.label2.Text = "WELCOME";
+            // 
             // FrmSignin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.ClientSize = new System.Drawing.Size(746, 430);
+            this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.Lbl_CustomerName);
             this.Controls.Add(this.BtnSignIN);
@@ -102,5 +115,6 @@ namespace StockControl
         private System.Windows.Forms.Button BtnSignIN;
         private System.Windows.Forms.Label Lbl_CustomerName;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label2;
     }
 }
