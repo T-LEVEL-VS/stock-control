@@ -17,7 +17,7 @@ namespace StockControl
             Application.SetHighDpiMode(HighDpiMode.SystemAware);
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new FrmSignIn());
+            Application.Run(new FrmSignin());
         }
     }
 }

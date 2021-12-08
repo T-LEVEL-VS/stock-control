@@ -16,5 +16,10 @@ namespace StockControl
         {
             InitializeComponent();
         }
+
+        private void FrmCustomer_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
