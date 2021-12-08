@@ -311,6 +311,7 @@ namespace StockControl
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ClientSize = new System.Drawing.Size(1465, 786);
             this.Controls.Add(this.lblUser);
             this.Controls.Add(this.txtUser);
