@@ -128,7 +128,7 @@ namespace StockControl
             // 
             // btnAddRecord
             // 
-            this.btnAddRecord.Location = new System.Drawing.Point(493, 67);
+            this.btnAddRecord.Location = new System.Drawing.Point(444, 66);
             this.btnAddRecord.Name = "btnAddRecord";
             this.btnAddRecord.Size = new System.Drawing.Size(97, 23);
             this.btnAddRecord.TabIndex = 9;
@@ -139,7 +139,7 @@ namespace StockControl
             // lblId
             // 
             this.lblId.AutoSize = true;
-            this.lblId.Location = new System.Drawing.Point(0, 351);
+            this.lblId.Location = new System.Drawing.Point(5, 111);
             this.lblId.Name = "lblId";
             this.lblId.Size = new System.Drawing.Size(18, 15);
             this.lblId.TabIndex = 10;
@@ -148,7 +148,7 @@ namespace StockControl
             // 
             // txtId
             // 
-            this.txtId.Location = new System.Drawing.Point(0, 369);
+            this.txtId.Location = new System.Drawing.Point(5, 129);
             this.txtId.Name = "txtId";
             this.txtId.Size = new System.Drawing.Size(106, 23);
             this.txtId.TabIndex = 11;
@@ -156,7 +156,7 @@ namespace StockControl
             // 
             // btnID
             // 
-            this.btnID.Location = new System.Drawing.Point(477, 332);
+            this.btnID.Location = new System.Drawing.Point(441, 126);
             this.btnID.Name = "btnID";
             this.btnID.Size = new System.Drawing.Size(100, 23);
             this.btnID.TabIndex = 12;
@@ -166,7 +166,7 @@ namespace StockControl
             // 
             // btnUpID
             // 
-            this.btnUpID.Location = new System.Drawing.Point(247, 393);
+            this.btnUpID.Location = new System.Drawing.Point(440, 167);
             this.btnUpID.Name = "btnUpID";
             this.btnUpID.Size = new System.Drawing.Size(101, 23);
             this.btnUpID.TabIndex = 13;
@@ -176,7 +176,7 @@ namespace StockControl
             // 
             // BtnViewRec
             // 
-            this.BtnViewRec.Location = new System.Drawing.Point(397, 393);
+            this.BtnViewRec.Location = new System.Drawing.Point(444, 24);
             this.BtnViewRec.Name = "BtnViewRec";
             this.BtnViewRec.Size = new System.Drawing.Size(97, 23);
             this.BtnViewRec.TabIndex = 14;
@@ -186,7 +186,7 @@ namespace StockControl
             // 
             // btnInStock
             // 
-            this.btnInStock.Location = new System.Drawing.Point(196, 332);
+            this.btnInStock.Location = new System.Drawing.Point(160, 126);
             this.btnInStock.Name = "btnInStock";
             this.btnInStock.Size = new System.Drawing.Size(97, 23);
             this.btnInStock.TabIndex = 15;
@@ -196,7 +196,7 @@ namespace StockControl
             // 
             // btnOutStock
             // 
-            this.btnOutStock.Location = new System.Drawing.Point(335, 332);
+            this.btnOutStock.Location = new System.Drawing.Point(299, 126);
             this.btnOutStock.Name = "btnOutStock";
             this.btnOutStock.Size = new System.Drawing.Size(97, 23);
             this.btnOutStock.TabIndex = 16;
