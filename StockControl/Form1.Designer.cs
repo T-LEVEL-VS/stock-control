@@ -206,7 +206,7 @@ namespace StockControl
             // 
             // btnSearch
             // 
-            this.btnSearch.Location = new System.Drawing.Point(810, 67);
+            this.btnSearch.Location = new System.Drawing.Point(836, 115);
             this.btnSearch.Name = "btnSearch";
             this.btnSearch.Size = new System.Drawing.Size(100, 23);
             this.btnSearch.TabIndex = 17;
