@@ -1,7 +1,7 @@
 ﻿
 namespace StockControl
 {
-    partial class Form1
+    partial class FrmStockControl
     {
         /// <summary>
         ///  Required designer variable.
@@ -329,7 +329,7 @@ namespace StockControl
             this.label2.TabIndex = 36;
             this.label2.Text = "Products";
             // 
-            // Form1
+            // FrmStockControl
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -364,7 +364,7 @@ namespace StockControl
             this.Controls.Add(this.lblProdDes);
             this.Controls.Add(this.lblQty);
             this.Controls.Add(this.txtQty);
-            this.Name = "Form1";
+            this.Name = "FrmStockControl";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);

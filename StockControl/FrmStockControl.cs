@@ -11,7 +11,7 @@ using System.Windows.Forms;
 
 namespace StockControl
 {
-    public partial class Form1 : Form
+    public partial class FrmStockControl : Form
     {
 
 
@@ -19,7 +19,7 @@ namespace StockControl
 
         public const string ServerString = "Server=tcp:jkf2331659.database.windows.net,1433;Initial Catalog=StockControl;Persist Security Info=False;User ID=JKF2331659;Password=Barnsley123!;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;";
 
-        public Form1()
+        public FrmStockControl()
         {
             InitializeComponent();
         }
