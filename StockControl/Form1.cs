@@ -332,7 +332,7 @@ namespace StockControl
 
         private void btnBuy_Click(object sender, EventArgs e)
         {
-
+            //hello 
         }
     }
 }
