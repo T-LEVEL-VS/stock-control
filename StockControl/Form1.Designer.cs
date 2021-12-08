@@ -176,7 +176,7 @@ namespace StockControl
             // 
             // BtnViewRec
             // 
-            this.BtnViewRec.Location = new System.Drawing.Point(442, 393);
+            this.BtnViewRec.Location = new System.Drawing.Point(397, 393);
             this.BtnViewRec.Name = "BtnViewRec";
             this.BtnViewRec.Size = new System.Drawing.Size(97, 23);
             this.BtnViewRec.TabIndex = 14;
@@ -206,7 +206,7 @@ namespace StockControl
             // 
             // btnSearch
             // 
-            this.btnSearch.Location = new System.Drawing.Point(869, 114);
+            this.btnSearch.Location = new System.Drawing.Point(836, 115);
             this.btnSearch.Name = "btnSearch";
             this.btnSearch.Size = new System.Drawing.Size(100, 23);
             this.btnSearch.TabIndex = 17;
@@ -224,7 +224,7 @@ namespace StockControl
             // 
             // btnBuy
             // 
-            this.btnBuy.Location = new System.Drawing.Point(682, 516);
+            this.btnBuy.Location = new System.Drawing.Point(1011, 331);
             this.btnBuy.Name = "btnBuy";
             this.btnBuy.Size = new System.Drawing.Size(100, 23);
             this.btnBuy.TabIndex = 25;
