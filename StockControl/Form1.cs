@@ -13,6 +13,12 @@ namespace StockControl
 {
     public partial class Form1 : Form
     {
+
+
+
+
+        public const string ServerString = "Server=tcp:jkf2331659.database.windows.net,1433;Initial Catalog=StockControl;Persist Security Info=False;User ID=JKF2331659;Password=Barnsley123!;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;";
+
         public Form1()
         {
             InitializeComponent();
@@ -61,11 +67,11 @@ namespace StockControl
 
 
 
-            string connectionString = "Server=tcp:jkf2331659.database.windows.net,1433;Initial Catalog=StockControl;Persist Security Info=False;User ID=JKF2331659;Password=Barnsley123!;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;";
+            //string connectionString = "Server=tcp:jkf2331659.database.windows.net,1433;Initial Catalog=StockControl;Persist Security Info=False;User ID=JKF2331659;Password=Barnsley123!;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;";
 
 
 
-            SqlConnection cn = new SqlConnection(connectionString);
+            SqlConnection cn = new SqlConnection(ServerString);
             SqlCommand cmd = new SqlCommand();
             cmd.Connection = cn;
 
@@ -105,11 +111,11 @@ namespace StockControl
             int ID;
             ID = Convert.ToInt32(txtId.Text);
 
-            string connectionString = "Server=tcp:jkf2331659.database.windows.net,1433;Initial Catalog=StockControl;Persist Security Info=False;User ID=JKF2331659;Password=Barnsley123!;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;";
+            //string connectionString = "Server=tcp:jkf2331659.database.windows.net,1433;Initial Catalog=StockControl;Persist Security Info=False;User ID=JKF2331659;Password=Barnsley123!;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;";
 
 
 
-            SqlConnection cn = new SqlConnection(connectionString);
+            SqlConnection cn = new SqlConnection(ServerString);
             SqlCommand cmd = new SqlCommand();
             cmd.Connection = cn;
 
@@ -139,11 +145,11 @@ namespace StockControl
             ProductDesc = Convert.ToString(txtProdDescription.Text);
             Cost = Convert.ToDecimal(txtCost.Text);
 
-            string connectionString = "Server=tcp:jkf2331659.database.windows.net,1433;Initial Catalog=StockControl;Persist Security Info=False;User ID=JKF2331659;Password=Barnsley123!;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;";
+            //string connectionString = "Server=tcp:jkf2331659.database.windows.net,1433;Initial Catalog=StockControl;Persist Security Info=False;User ID=JKF2331659;Password=Barnsley123!;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;";
 
 
 
-            SqlConnection cn = new SqlConnection(connectionString);
+            SqlConnection cn = new SqlConnection(ServerString);
             SqlCommand cmd = new SqlCommand();
             cmd.Connection = cn;
 
@@ -166,7 +172,7 @@ namespace StockControl
         private void BtnViewRec_Click(object sender, EventArgs e)
         {
             {
-                string connectionString = "Server=tcp:jkf2331659.database.windows.net,1433;Initial Catalog=StockControl;Persist Security Info=False;User ID=JKF2331659;Password=Barnsley123!;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;";
+                //string connectionString = "Server=tcp:jkf2331659.database.windows.net,1433;Initial Catalog=StockControl;Persist Security Info=False;User ID=JKF2331659;Password=Barnsley123!;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;";
 
                 {
                     int ID;
@@ -178,7 +184,7 @@ namespace StockControl
                    "SELECT * FROM Products WHERE ID = @ID";
 
                     using (SqlConnection connection =
-                    new SqlConnection(connectionString))
+                    new SqlConnection(ServerString))
                     {
                         SqlCommand command =
                         new SqlCommand(queryString, connection);
@@ -204,7 +210,7 @@ namespace StockControl
         private void button1_Click_1(object sender, EventArgs e)
         {
             {
-                string connectionString = "Server=tcp:jkf2331659.database.windows.net,1433;Initial Catalog=StockControl;Persist Security Info=False;User ID=JKF2331659;Password=Barnsley123!;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;";
+                //string connectionString = "Server=tcp:jkf2331659.database.windows.net,1433;Initial Catalog=StockControl;Persist Security Info=False;User ID=JKF2331659;Password=Barnsley123!;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;";
 
                 {
                     int ID;
@@ -215,9 +221,9 @@ namespace StockControl
 
 
                     using (SqlConnection connection =
-                    new SqlConnection(connectionString))
+                    new SqlConnection(ServerString))
                     {
-                        SqlConnection cn = new SqlConnection(connectionString);
+                        SqlConnection cn = new SqlConnection(ServerString);
                         SqlCommand cmd = new SqlCommand();
                         cmd.Connection = cn;
 
@@ -240,7 +246,7 @@ namespace StockControl
         private void button1_Click_2(object sender, EventArgs e)
         {
             {
-                string connectionString = "Server=tcp:jkf2331659.database.windows.net,1433;Initial Catalog=StockControl;Persist Security Info=False;User ID=JKF2331659;Password=Barnsley123!;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;";
+                //string connectionString = "Server=tcp:jkf2331659.database.windows.net,1433;Initial Catalog=StockControl;Persist Security Info=False;User ID=JKF2331659;Password=Barnsley123!;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;";
 
                 {
                     int ID;
@@ -250,9 +256,9 @@ namespace StockControl
                     OutOfStock = 0;
 
                     using (SqlConnection connection =
-                    new SqlConnection(connectionString))
+                    new SqlConnection(ServerString))
                     {
-                        SqlConnection cn = new SqlConnection(connectionString);
+                        SqlConnection cn = new SqlConnection(ServerString);
                         SqlCommand cmd = new SqlCommand();
                         cmd.Connection = cn;
 
@@ -290,7 +296,7 @@ namespace StockControl
         private void btnSearch_Click(object sender, EventArgs e)
         {
             {
-                string connectionString = "Server=tcp:jkf2331659.database.windows.net,1433;Initial Catalog=StockControl;Persist Security Info=False;User ID=JKF2331659;Password=Barnsley123!;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;";
+                //string connectionString = "Server=tcp:jkf2331659.database.windows.net,1433;Initial Catalog=StockControl;Persist Security Info=False;User ID=JKF2331659;Password=Barnsley123!;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;";
 
                 {
                     int ID;
@@ -302,7 +308,7 @@ namespace StockControl
                    "SELECT * FROM Products WHERE ID = @ID";
 
                     using (SqlConnection connection =
-                    new SqlConnection(connectionString))
+                    new SqlConnection(ServerString))
                     {
                         SqlCommand command =
                         new SqlCommand(queryString, connection);
