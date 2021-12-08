@@ -377,16 +377,16 @@ namespace StockControl
                         //txtHowMany.Text = r[2].ToString();
 
                         //txtHowMany.Text = c;
-                        //c = (int)c + Bought;
+                        //c = (int)c - Bought;
 
                         //MessageBox.Show((string)c);
 
                         //txtPrice.Text = r[3].ToString();
-                        // }
+                    }
                         // reader.Close();
 
                         MessageBox.Show("Product Purchased");
-                    }
+                 
                 }
 
             }
