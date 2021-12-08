@@ -224,7 +224,7 @@ namespace StockControl
             // 
             // btnBuy
             // 
-            this.btnBuy.Location = new System.Drawing.Point(1042, 323);
+            this.btnBuy.Location = new System.Drawing.Point(1011, 332);
             this.btnBuy.Name = "btnBuy";
             this.btnBuy.Size = new System.Drawing.Size(100, 23);
             this.btnBuy.TabIndex = 25;
@@ -293,7 +293,7 @@ namespace StockControl
             // 
             // txtUser
             // 
-            this.txtUser.Location = new System.Drawing.Point(869, 323);
+            this.txtUser.Location = new System.Drawing.Point(857, 332);
             this.txtUser.Name = "txtUser";
             this.txtUser.Size = new System.Drawing.Size(100, 23);
             this.txtUser.TabIndex = 33;
@@ -311,7 +311,7 @@ namespace StockControl
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1377, 508);
+            this.ClientSize = new System.Drawing.Size(1465, 786);
             this.Controls.Add(this.lblUser);
             this.Controls.Add(this.txtUser);
             this.Controls.Add(this.lblPrice);
