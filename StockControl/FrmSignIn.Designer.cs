@@ -52,7 +52,7 @@ namespace StockControl
             // 
             // BtnSignIN
             // 
-            this.BtnSignIN.Location = new System.Drawing.Point(314, 255);
+            this.BtnSignIN.Location = new System.Drawing.Point(309, 275);
             this.BtnSignIN.Name = "BtnSignIN";
             this.BtnSignIN.Size = new System.Drawing.Size(96, 37);
             this.BtnSignIN.TabIndex = 2;
