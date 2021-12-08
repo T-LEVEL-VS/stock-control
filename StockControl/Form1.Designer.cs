@@ -224,7 +224,7 @@ namespace StockControl
             // 
             // btnBuy
             // 
-            this.btnBuy.Location = new System.Drawing.Point(1052, 419);
+            this.btnBuy.Location = new System.Drawing.Point(1047, 332);
             this.btnBuy.Name = "btnBuy";
             this.btnBuy.Size = new System.Drawing.Size(100, 23);
             this.btnBuy.TabIndex = 25;
