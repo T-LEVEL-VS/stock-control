@@ -365,7 +365,7 @@ namespace StockControl
             this.Controls.Add(this.lblQty);
             this.Controls.Add(this.txtQty);
             this.Name = "FrmStockControl";
-            this.Text = "Form1";
+            this.Text = "Admin view";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
             this.PerformLayout();

@@ -75,7 +75,7 @@ namespace StockControl
             this.Controls.Add(this.Btn_Customer);
             this.Controls.Add(this.Btn_StockControl);
             this.Name = "FrmHome";
-            this.Text = "Form2";
+            this.Text = "Homepage";
             this.Load += new System.EventHandler(this.Form2_Load);
             this.ResumeLayout(false);
             this.PerformLayout();

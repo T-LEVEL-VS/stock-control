@@ -163,7 +163,7 @@ namespace StockControl
             this.Controls.Add(this.txtName);
             this.Controls.Add(this.btnSearch);
             this.Name = "FrmCustomer";
-            this.Text = "Form3";
+            this.Text = "Customer home";
             this.Load += new System.EventHandler(this.FrmCustomer_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
