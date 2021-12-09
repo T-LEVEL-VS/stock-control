@@ -24,5 +24,10 @@ namespace StockControl
             f1.ShowDialog();
             this.Close();
         }
+
+        private void FrmSignin_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
