@@ -9,6 +9,9 @@ using System.Threading.Tasks;
 using System.Data.SqlClient;
 using System.Windows.Forms;
 
+
+
+
 namespace StockControl
 {
     public partial class FrmStockControl : Form
@@ -390,6 +393,38 @@ namespace StockControl
                 }
 
             }
+        }
+
+        private void txtCost_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtProdName_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void cmbList_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            
+            
+        }
+
+        private void btnBack_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            FrmHome f1 = new FrmHome();
+            f1.ShowDialog();
+            this.Close();
+        }
+
+        private void btnBackToSignIn_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            FrmSignin f1 = new FrmSignin();
+            f1.ShowDialog();
+            this.Close();
         }
     }
 }

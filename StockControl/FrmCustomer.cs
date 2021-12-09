@@ -74,7 +74,7 @@ namespace StockControl
                 //string connectionString = "Server=tcp:jkf2331659.database.windows.net,1433;Initial Catalog=StockControl;Persist Security Info=False;User ID=JKF2331659;Password=Barnsley123!;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;";
 
 
-                //int ID;
+               // int ID;
                 //int Bought;
                 //int NewNumber;
 
@@ -89,39 +89,57 @@ namespace StockControl
                     //"SELECT * FROM Products WHERE ID = @ID";
 
                     //using (SqlConnection connection =
-                    //new SqlConnection(ServerString))
-                    // {
-                    //SqlCommand command =
-                    //new SqlCommand(queryString, connection);
-                    //command.Parameters.AddWithValue("@ID", ID);
-                    //connection.Open();
-
-                    //SqlDataReader reader = command.ExecuteReader();
-
-                    //while (reader.Read())
+                   // new SqlConnection(ServerString))
                     {
-                        // r = reader;
-                        //int c = 0;
-                        //txtProdName.Text = r[1].ToString();
+                       // SqlCommand command =
+                        //new SqlCommand(queryString, connection);
+                        //command.Parameters.AddWithValue("@ID", ID);
+                        //connection.Open();
 
-                        ///txtHowMany.Text = r[2].ToString();
+                        //SqlDataReader reader = command.ExecuteReader();
 
-                        //txtHowMany.Text = r[2].ToString();
+                        //while (reader.Read())
+                        {
+                           // r = reader;
+                           // int c = 0;
+                            //txtProdName.Text = r[1].ToString();
 
-                        //txtHowMany.Text = c;
-                        //c = (int)c - Bought;
+                           // txtHowMany.Text = r[2].ToString();
 
-                        //MessageBox.Show((string)c);
+                            //txtHowMany.Text = r[2].ToString();
 
-                        //txtPrice.Text = r[3].ToString();
+                            ////txtHowMany.Text = c;
+                            //c = (int)c - Bought;
+
+                            //MessageBox.Show((string)c);
+
+                           // txtPrice.Text = r[3].ToString();
+                        }
+                       // reader.Close();
+
+                        MessageBox.Show("Product Purchased");
                     }
-                    // reader.Close();
-
-                    MessageBox.Show("Product Purchased");
-
                 }
 
             }
+        }
+
+        private void lblName_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnCustomerLogOut_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            FrmSignin f1 = new FrmSignin();
+            f1.ShowDialog();
+            this.Close();
         }
     }
 }

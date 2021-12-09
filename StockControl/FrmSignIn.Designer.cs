@@ -29,35 +29,37 @@ namespace StockControl
         /// </summary>
         private void InitializeComponent()
         {
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.txtPassword = new System.Windows.Forms.TextBox();
+            this.txtUsername = new System.Windows.Forms.TextBox();
             this.BtnSignIN = new System.Windows.Forms.Button();
             this.Lbl_CustomerName = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
-            // textBox1
+            // txtPassword
             // 
-            this.textBox1.Location = new System.Drawing.Point(416, 191);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 23);
-            this.textBox1.TabIndex = 0;
+            this.txtPassword.Location = new System.Drawing.Point(416, 191);
+            this.txtPassword.Name = "txtPassword";
+            this.txtPassword.PasswordChar = '*';
+            this.txtPassword.Size = new System.Drawing.Size(100, 23);
+            this.txtPassword.TabIndex = 0;
+            this.txtPassword.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
-            // textBox2
+            // txtUsername
             // 
-            this.textBox2.Location = new System.Drawing.Point(221, 191);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(100, 23);
-            this.textBox2.TabIndex = 1;
+            this.txtUsername.Location = new System.Drawing.Point(221, 191);
+            this.txtUsername.Name = "txtUsername";
+            this.txtUsername.Size = new System.Drawing.Size(100, 23);
+            this.txtUsername.TabIndex = 1;
             // 
             // BtnSignIN
             // 
-            this.BtnSignIN.Location = new System.Drawing.Point(309, 275);
+            this.BtnSignIN.Location = new System.Drawing.Point(321, 235);
             this.BtnSignIN.Name = "BtnSignIN";
             this.BtnSignIN.Size = new System.Drawing.Size(96, 37);
             this.BtnSignIN.TabIndex = 2;
-            this.BtnSignIN.Text = "SIGN IN";
+            this.BtnSignIN.Text = "GO";
             this.BtnSignIN.UseVisualStyleBackColor = true;
             this.BtnSignIN.Click += new System.EventHandler(this.BtnSignIN_Click);
             // 
@@ -82,28 +84,28 @@ namespace StockControl
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Showcard Gothic", 48F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label2.Location = new System.Drawing.Point(198, 41);
+            this.label2.Font = new System.Drawing.Font("Eras Medium ITC", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label2.Location = new System.Drawing.Point(314, 114);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(343, 79);
+            this.label2.Size = new System.Drawing.Size(111, 43);
             this.label2.TabIndex = 38;
-            this.label2.Text = "WELCOME";
+            this.label2.Text = "Login";
+            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // FrmSignin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.ClientSize = new System.Drawing.Size(746, 430);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.Lbl_CustomerName);
             this.Controls.Add(this.BtnSignIN);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txtUsername);
+            this.Controls.Add(this.txtPassword);
             this.Name = "FrmSignin";
             this.Text = "Sign in";
-            this.Load += new System.EventHandler(this.FrmSignin_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -111,8 +113,8 @@ namespace StockControl
 
         #endregion
 
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox txtPassword;
+        private System.Windows.Forms.TextBox txtUsername;
         private System.Windows.Forms.Button BtnSignIN;
         private System.Windows.Forms.Label Lbl_CustomerName;
         private System.Windows.Forms.Label label1;
