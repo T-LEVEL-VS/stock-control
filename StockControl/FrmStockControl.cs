@@ -9,6 +9,9 @@ using System.Threading.Tasks;
 using System.Data.SqlClient;
 using System.Windows.Forms;
 
+
+
+
 namespace StockControl
 {
     public partial class FrmStockControl : Form
@@ -402,9 +405,10 @@ namespace StockControl
 
         }
 
-        private void label3_Click(object sender, EventArgs e)
+        private void cmbList_SelectedIndexChanged(object sender, EventArgs e)
         {
-
+            
+            
         }
 
         private void btnBack_Click(object sender, EventArgs e)
