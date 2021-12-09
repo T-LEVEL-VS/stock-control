@@ -60,7 +60,10 @@ namespace StockControl
             this.lblUser = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.cmbList = new System.Windows.Forms.ComboBox();
+            this.progressBar1 = new System.Windows.Forms.ProgressBar();
+            this.label3 = new System.Windows.Forms.Label();
+            this.btnStockControlToHome = new System.Windows.Forms.Button();
+            this.btnBackToSignIn = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // contextMenuStrip1
@@ -70,7 +73,7 @@ namespace StockControl
             // 
             // txtQty
             // 
-            this.txtQty.Location = new System.Drawing.Point(23, 235);
+            this.txtQty.Location = new System.Drawing.Point(62, 180);
             this.txtQty.Name = "txtQty";
             this.txtQty.Size = new System.Drawing.Size(100, 23);
             this.txtQty.TabIndex = 2;
@@ -79,7 +82,7 @@ namespace StockControl
             // lblQty
             // 
             this.lblQty.AutoSize = true;
-            this.lblQty.Location = new System.Drawing.Point(23, 218);
+            this.lblQty.Location = new System.Drawing.Point(62, 163);
             this.lblQty.Name = "lblQty";
             this.lblQty.Size = new System.Drawing.Size(26, 15);
             this.lblQty.TabIndex = 3;
@@ -89,7 +92,7 @@ namespace StockControl
             // lblProdDes
             // 
             this.lblProdDes.AutoSize = true;
-            this.lblProdDes.Location = new System.Drawing.Point(170, 218);
+            this.lblProdDes.Location = new System.Drawing.Point(209, 163);
             this.lblProdDes.Name = "lblProdDes";
             this.lblProdDes.Size = new System.Drawing.Size(67, 15);
             this.lblProdDes.TabIndex = 4;
@@ -98,7 +101,7 @@ namespace StockControl
             // 
             // txtProdDescription
             // 
-            this.txtProdDescription.Location = new System.Drawing.Point(170, 235);
+            this.txtProdDescription.Location = new System.Drawing.Point(209, 180);
             this.txtProdDescription.Name = "txtProdDescription";
             this.txtProdDescription.Size = new System.Drawing.Size(100, 23);
             this.txtProdDescription.TabIndex = 5;
@@ -115,7 +118,7 @@ namespace StockControl
             // 
             // txtCost
             // 
-            this.txtCost.Location = new System.Drawing.Point(321, 235);
+            this.txtCost.Location = new System.Drawing.Point(360, 180);
             this.txtCost.Name = "txtCost";
             this.txtCost.Size = new System.Drawing.Size(101, 23);
             this.txtCost.TabIndex = 7;
@@ -124,7 +127,7 @@ namespace StockControl
             // lblCosts
             // 
             this.lblCosts.AutoSize = true;
-            this.lblCosts.Location = new System.Drawing.Point(321, 217);
+            this.lblCosts.Location = new System.Drawing.Point(360, 162);
             this.lblCosts.Name = "lblCosts";
             this.lblCosts.Size = new System.Drawing.Size(31, 15);
             this.lblCosts.TabIndex = 8;
@@ -132,9 +135,9 @@ namespace StockControl
             // 
             // btnAddRecord
             // 
-            this.btnAddRecord.Location = new System.Drawing.Point(455, 235);
+            this.btnAddRecord.Location = new System.Drawing.Point(62, 222);
             this.btnAddRecord.Name = "btnAddRecord";
-            this.btnAddRecord.Size = new System.Drawing.Size(97, 23);
+            this.btnAddRecord.Size = new System.Drawing.Size(100, 23);
             this.btnAddRecord.TabIndex = 9;
             this.btnAddRecord.Text = "Add Record";
             this.btnAddRecord.UseVisualStyleBackColor = true;
@@ -143,7 +146,7 @@ namespace StockControl
             // lblId
             // 
             this.lblId.AutoSize = true;
-            this.lblId.Location = new System.Drawing.Point(23, 328);
+            this.lblId.Location = new System.Drawing.Point(68, 322);
             this.lblId.Name = "lblId";
             this.lblId.Size = new System.Drawing.Size(18, 15);
             this.lblId.TabIndex = 10;
@@ -152,7 +155,7 @@ namespace StockControl
             // 
             // txtId
             // 
-            this.txtId.Location = new System.Drawing.Point(23, 346);
+            this.txtId.Location = new System.Drawing.Point(68, 340);
             this.txtId.Name = "txtId";
             this.txtId.Size = new System.Drawing.Size(106, 23);
             this.txtId.TabIndex = 11;
@@ -160,9 +163,9 @@ namespace StockControl
             // 
             // btnID
             // 
-            this.btnID.Location = new System.Drawing.Point(455, 264);
+            this.btnID.Location = new System.Drawing.Point(209, 222);
             this.btnID.Name = "btnID";
-            this.btnID.Size = new System.Drawing.Size(97, 23);
+            this.btnID.Size = new System.Drawing.Size(100, 23);
             this.btnID.TabIndex = 12;
             this.btnID.Text = "Delete record";
             this.btnID.UseVisualStyleBackColor = true;
@@ -170,9 +173,9 @@ namespace StockControl
             // 
             // btnUpID
             // 
-            this.btnUpID.Location = new System.Drawing.Point(455, 293);
+            this.btnUpID.Location = new System.Drawing.Point(360, 222);
             this.btnUpID.Name = "btnUpID";
-            this.btnUpID.Size = new System.Drawing.Size(97, 23);
+            this.btnUpID.Size = new System.Drawing.Size(101, 23);
             this.btnUpID.TabIndex = 13;
             this.btnUpID.Text = "Update Record";
             this.btnUpID.UseVisualStyleBackColor = true;
@@ -180,9 +183,9 @@ namespace StockControl
             // 
             // BtnViewRec
             // 
-            this.BtnViewRec.Location = new System.Drawing.Point(273, 346);
+            this.BtnViewRec.Location = new System.Drawing.Point(68, 389);
             this.BtnViewRec.Name = "BtnViewRec";
-            this.BtnViewRec.Size = new System.Drawing.Size(97, 23);
+            this.BtnViewRec.Size = new System.Drawing.Size(106, 23);
             this.BtnViewRec.TabIndex = 14;
             this.BtnViewRec.Text = "View Record";
             this.BtnViewRec.UseVisualStyleBackColor = true;
@@ -190,7 +193,7 @@ namespace StockControl
             // 
             // btnInStock
             // 
-            this.btnInStock.Location = new System.Drawing.Point(170, 346);
+            this.btnInStock.Location = new System.Drawing.Point(337, 340);
             this.btnInStock.Name = "btnInStock";
             this.btnInStock.Size = new System.Drawing.Size(97, 23);
             this.btnInStock.TabIndex = 15;
@@ -200,7 +203,7 @@ namespace StockControl
             // 
             // btnOutStock
             // 
-            this.btnOutStock.Location = new System.Drawing.Point(170, 317);
+            this.btnOutStock.Location = new System.Drawing.Point(337, 390);
             this.btnOutStock.Name = "btnOutStock";
             this.btnOutStock.Size = new System.Drawing.Size(97, 23);
             this.btnOutStock.TabIndex = 16;
@@ -210,7 +213,7 @@ namespace StockControl
             // 
             // btnSearch
             // 
-            this.btnSearch.Location = new System.Drawing.Point(1008, 265);
+            this.btnSearch.Location = new System.Drawing.Point(872, 233);
             this.btnSearch.Name = "btnSearch";
             this.btnSearch.Size = new System.Drawing.Size(100, 23);
             this.btnSearch.TabIndex = 17;
@@ -220,7 +223,7 @@ namespace StockControl
             // 
             // txtName
             // 
-            this.txtName.Location = new System.Drawing.Point(696, 28);
+            this.txtName.Location = new System.Drawing.Point(732, 233);
             this.txtName.Name = "txtName";
             this.txtName.Size = new System.Drawing.Size(100, 23);
             this.txtName.TabIndex = 18;
@@ -228,7 +231,7 @@ namespace StockControl
             // 
             // btnBuy
             // 
-            this.btnBuy.Location = new System.Drawing.Point(1008, 421);
+            this.btnBuy.Location = new System.Drawing.Point(872, 389);
             this.btnBuy.Name = "btnBuy";
             this.btnBuy.Size = new System.Drawing.Size(100, 23);
             this.btnBuy.TabIndex = 25;
@@ -239,7 +242,7 @@ namespace StockControl
             // lblName
             // 
             this.lblName.AutoSize = true;
-            this.lblName.Location = new System.Drawing.Point(868, 247);
+            this.lblName.Location = new System.Drawing.Point(732, 215);
             this.lblName.Name = "lblName";
             this.lblName.Size = new System.Drawing.Size(39, 15);
             this.lblName.TabIndex = 26;
@@ -248,7 +251,7 @@ namespace StockControl
             // 
             // txtHowMany
             // 
-            this.txtHowMany.Location = new System.Drawing.Point(1008, 347);
+            this.txtHowMany.Location = new System.Drawing.Point(808, 316);
             this.txtHowMany.Name = "txtHowMany";
             this.txtHowMany.Size = new System.Drawing.Size(100, 23);
             this.txtHowMany.TabIndex = 27;
@@ -256,7 +259,7 @@ namespace StockControl
             // 
             // txtProdName
             // 
-            this.txtProdName.Location = new System.Drawing.Point(868, 347);
+            this.txtProdName.Location = new System.Drawing.Point(668, 316);
             this.txtProdName.Name = "txtProdName";
             this.txtProdName.Size = new System.Drawing.Size(100, 23);
             this.txtProdName.TabIndex = 28;
@@ -264,7 +267,7 @@ namespace StockControl
             // 
             // txtPrice
             // 
-            this.txtPrice.Location = new System.Drawing.Point(1139, 346);
+            this.txtPrice.Location = new System.Drawing.Point(939, 316);
             this.txtPrice.Name = "txtPrice";
             this.txtPrice.Size = new System.Drawing.Size(100, 23);
             this.txtPrice.TabIndex = 29;
@@ -272,7 +275,7 @@ namespace StockControl
             // lblStock
             // 
             this.lblStock.AutoSize = true;
-            this.lblStock.Location = new System.Drawing.Point(1008, 328);
+            this.lblStock.Location = new System.Drawing.Point(808, 298);
             this.lblStock.Name = "lblStock";
             this.lblStock.Size = new System.Drawing.Size(49, 15);
             this.lblStock.TabIndex = 30;
@@ -281,7 +284,7 @@ namespace StockControl
             // lblProdName
             // 
             this.lblProdName.AutoSize = true;
-            this.lblProdName.Location = new System.Drawing.Point(868, 329);
+            this.lblProdName.Location = new System.Drawing.Point(668, 298);
             this.lblProdName.Name = "lblProdName";
             this.lblProdName.Size = new System.Drawing.Size(84, 15);
             this.lblProdName.TabIndex = 31;
@@ -290,7 +293,7 @@ namespace StockControl
             // lblPrice
             // 
             this.lblPrice.AutoSize = true;
-            this.lblPrice.Location = new System.Drawing.Point(1139, 328);
+            this.lblPrice.Location = new System.Drawing.Point(939, 298);
             this.lblPrice.Name = "lblPrice";
             this.lblPrice.Size = new System.Drawing.Size(33, 15);
             this.lblPrice.TabIndex = 32;
@@ -298,7 +301,7 @@ namespace StockControl
             // 
             // txtUser
             // 
-            this.txtUser.Location = new System.Drawing.Point(868, 421);
+            this.txtUser.Location = new System.Drawing.Point(732, 389);
             this.txtUser.Name = "txtUser";
             this.txtUser.Size = new System.Drawing.Size(100, 23);
             this.txtUser.TabIndex = 33;
@@ -306,7 +309,7 @@ namespace StockControl
             // lblUser
             // 
             this.lblUser.AutoSize = true;
-            this.lblUser.Location = new System.Drawing.Point(868, 403);
+            this.lblUser.Location = new System.Drawing.Point(732, 371);
             this.lblUser.Name = "lblUser";
             this.lblUser.Size = new System.Drawing.Size(53, 15);
             this.lblUser.TabIndex = 34;
@@ -315,46 +318,71 @@ namespace StockControl
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Arial Rounded MT Bold", 48F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label1.Location = new System.Drawing.Point(822, 40);
+            this.label1.Font = new System.Drawing.Font("Eras Medium ITC", 26.25F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point);
+            this.label1.Location = new System.Drawing.Point(723, 137);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(373, 75);
+            this.label1.Size = new System.Drawing.Size(256, 40);
             this.label1.TabIndex = 35;
-            this.label1.Text = "Customers";
+            this.label1.Text = "Customer View";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Agency FB", 48F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label2.Location = new System.Drawing.Point(72, 40);
+            this.label2.Font = new System.Drawing.Font("Eras Medium ITC", 24F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point);
+            this.label2.Location = new System.Drawing.Point(12, 113);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(213, 77);
+            this.label2.Size = new System.Drawing.Size(521, 36);
             this.label2.TabIndex = 36;
-            this.label2.Text = "Products";
+            this.label2.Text = "Administrative Record Management";
+            this.label2.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
-            // cmbList
+            // progressBar1
             // 
-            this.cmbList.FormattingEnabled = true;
-            this.cmbList.Items.AddRange(new object[] {
-            "asdasd",
-            "asd",
-            "as",
-            "das",
-            "das",
-            "d"});
-            this.cmbList.Location = new System.Drawing.Point(836, 266);
-            this.cmbList.Name = "cmbList";
-            this.cmbList.Size = new System.Drawing.Size(166, 23);
-            this.cmbList.TabIndex = 37;
-            this.cmbList.SelectedIndexChanged += new System.EventHandler(this.cmbList_SelectedIndexChanged);
+            this.progressBar1.Location = new System.Drawing.Point(0, 0);
+            this.progressBar1.Name = "progressBar1";
+            this.progressBar1.Size = new System.Drawing.Size(100, 23);
+            this.progressBar1.TabIndex = 37;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Eras Medium ITC", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label3.Location = new System.Drawing.Point(186, 363);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(139, 24);
+            this.label3.TabIndex = 38;
+            this.label3.Text = "Stock Updater";
+            // 
+            // btnStockControlToHome
+            // 
+            this.btnStockControlToHome.Location = new System.Drawing.Point(1015, 12);
+            this.btnStockControlToHome.Name = "btnStockControlToHome";
+            this.btnStockControlToHome.Size = new System.Drawing.Size(75, 23);
+            this.btnStockControlToHome.TabIndex = 39;
+            this.btnStockControlToHome.Text = "To Home";
+            this.btnStockControlToHome.UseVisualStyleBackColor = true;
+            this.btnStockControlToHome.Click += new System.EventHandler(this.btnBack_Click);
+            // 
+            // btnBackToSignIn
+            // 
+            this.btnBackToSignIn.Location = new System.Drawing.Point(985, 605);
+            this.btnBackToSignIn.Name = "btnBackToSignIn";
+            this.btnBackToSignIn.Size = new System.Drawing.Size(105, 23);
+            this.btnBackToSignIn.TabIndex = 40;
+            this.btnBackToSignIn.Text = "Back to Sign In";
+            this.btnBackToSignIn.UseVisualStyleBackColor = true;
+            this.btnBackToSignIn.Click += new System.EventHandler(this.btnBackToSignIn_Click);
             // 
             // FrmStockControl
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.ClientSize = new System.Drawing.Size(1465, 786);
-            this.Controls.Add(this.cmbList);
+            this.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.ClientSize = new System.Drawing.Size(1113, 786);
+            this.Controls.Add(this.btnBackToSignIn);
+            this.Controls.Add(this.btnStockControlToHome);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.progressBar1);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.lblUser);
@@ -423,7 +451,10 @@ namespace StockControl
         private System.Windows.Forms.Label lblUser;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.ComboBox cmbList;
+        private System.Windows.Forms.ProgressBar progressBar1;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Button btnStockControlToHome;
+        private System.Windows.Forms.Button btnBackToSignIn;
     }
 }
 

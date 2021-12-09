@@ -133,5 +133,13 @@ namespace StockControl
         {
 
         }
+
+        private void btnCustomerLogOut_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            FrmSignin f1 = new FrmSignin();
+            f1.ShowDialog();
+            this.Close();
+        }
     }
 }

@@ -35,12 +35,13 @@ namespace StockControl
             this.label2 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
+            this.btnLogOut = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // Btn_StockControl
             // 
-            this.Btn_StockControl.Location = new System.Drawing.Point(289, 221);
+            this.Btn_StockControl.Location = new System.Drawing.Point(296, 187);
             this.Btn_StockControl.Name = "Btn_StockControl";
             this.Btn_StockControl.Size = new System.Drawing.Size(171, 30);
             this.Btn_StockControl.TabIndex = 0;
@@ -50,7 +51,7 @@ namespace StockControl
             // 
             // Btn_Customer
             // 
-            this.Btn_Customer.Location = new System.Drawing.Point(289, 280);
+            this.Btn_Customer.Location = new System.Drawing.Point(296, 246);
             this.Btn_Customer.Name = "Btn_Customer";
             this.Btn_Customer.Size = new System.Drawing.Size(171, 30);
             this.Btn_Customer.TabIndex = 1;
@@ -89,12 +90,23 @@ namespace StockControl
             this.label1.TabIndex = 39;
             this.label1.Text = "Welcome to the stock buying system.";
             // 
+            // btnLogOut
+            // 
+            this.btnLogOut.Location = new System.Drawing.Point(328, 307);
+            this.btnLogOut.Name = "btnLogOut";
+            this.btnLogOut.Size = new System.Drawing.Size(100, 30);
+            this.btnLogOut.TabIndex = 40;
+            this.btnLogOut.Text = "Log Out";
+            this.btnLogOut.UseVisualStyleBackColor = true;
+            this.btnLogOut.Click += new System.EventHandler(this.btnLogOut_Click);
+            // 
             // FrmHome
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.ClientSize = new System.Drawing.Size(759, 413);
+            this.Controls.Add(this.btnLogOut);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.label2);
@@ -116,5 +128,6 @@ namespace StockControl
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button btnLogOut;
     }
 }

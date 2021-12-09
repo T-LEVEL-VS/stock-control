@@ -410,5 +410,21 @@ namespace StockControl
             
             
         }
+
+        private void btnBack_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            FrmHome f1 = new FrmHome();
+            f1.ShowDialog();
+            this.Close();
+        }
+
+        private void btnBackToSignIn_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            FrmSignin f1 = new FrmSignin();
+            f1.ShowDialog();
+            this.Close();
+        }
     }
 }

@@ -42,6 +42,7 @@ namespace StockControl
             this.txtName = new System.Windows.Forms.TextBox();
             this.btnSearch = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
+            this.btnCustomerLogOut = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // lblUser
@@ -157,12 +158,23 @@ namespace StockControl
             this.label1.Text = "Purchase Order";
             this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
+            // btnCustomerLogOut
+            // 
+            this.btnCustomerLogOut.Location = new System.Drawing.Point(525, 314);
+            this.btnCustomerLogOut.Name = "btnCustomerLogOut";
+            this.btnCustomerLogOut.Size = new System.Drawing.Size(75, 23);
+            this.btnCustomerLogOut.TabIndex = 48;
+            this.btnCustomerLogOut.Text = "Log Out";
+            this.btnCustomerLogOut.UseVisualStyleBackColor = true;
+            this.btnCustomerLogOut.Click += new System.EventHandler(this.btnCustomerLogOut_Click);
+            // 
             // FrmCustomer
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.ClientSize = new System.Drawing.Size(612, 349);
+            this.Controls.Add(this.btnCustomerLogOut);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.lblUser);
             this.Controls.Add(this.txtUser);
@@ -199,5 +211,6 @@ namespace StockControl
         private System.Windows.Forms.TextBox txtName;
         private System.Windows.Forms.Button btnSearch;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button btnCustomerLogOut;
     }
 }
