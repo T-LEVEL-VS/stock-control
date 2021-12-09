@@ -352,7 +352,6 @@ namespace StockControl
             this.label3.Size = new System.Drawing.Size(139, 24);
             this.label3.TabIndex = 38;
             this.label3.Text = "Stock Updater";
-            this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
             // btnStockControlToHome
             // 
