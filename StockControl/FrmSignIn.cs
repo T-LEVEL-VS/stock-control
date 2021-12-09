@@ -33,8 +33,6 @@ namespace StockControl
             cmd.Connection = cn;
 
             cmd.CommandText = "INSERT into Customers (Username, Password) VALUES (@Qty, @ProductName, @Cost)";
-            cmd.Parameters.AddWithValue("@Username", Username);
-            cmd.Parameters.AddWithValue("@Password", Password);
 
             this.Hide();
             FrmHome f1 = new FrmHome();
