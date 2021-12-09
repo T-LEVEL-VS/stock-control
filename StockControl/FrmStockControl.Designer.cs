@@ -60,6 +60,7 @@ namespace StockControl
             this.lblUser = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
+            this.cmbList = new System.Windows.Forms.ComboBox();
             this.SuspendLayout();
             // 
             // contextMenuStrip1
@@ -219,7 +220,7 @@ namespace StockControl
             // 
             // txtName
             // 
-            this.txtName.Location = new System.Drawing.Point(868, 265);
+            this.txtName.Location = new System.Drawing.Point(696, 28);
             this.txtName.Name = "txtName";
             this.txtName.Size = new System.Drawing.Size(100, 23);
             this.txtName.TabIndex = 18;
@@ -314,22 +315,38 @@ namespace StockControl
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Showcard Gothic", 48F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label1.Font = new System.Drawing.Font("Arial Rounded MT Bold", 48F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label1.Location = new System.Drawing.Point(822, 40);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(400, 79);
+            this.label1.Size = new System.Drawing.Size(373, 75);
             this.label1.TabIndex = 35;
             this.label1.Text = "Customers";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Showcard Gothic", 48F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label2.Font = new System.Drawing.Font("Agency FB", 48F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label2.Location = new System.Drawing.Point(72, 40);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(365, 79);
+            this.label2.Size = new System.Drawing.Size(213, 77);
             this.label2.TabIndex = 36;
             this.label2.Text = "Products";
+            // 
+            // cmbList
+            // 
+            this.cmbList.FormattingEnabled = true;
+            this.cmbList.Items.AddRange(new object[] {
+            "asdasd",
+            "asd",
+            "as",
+            "das",
+            "das",
+            "d"});
+            this.cmbList.Location = new System.Drawing.Point(836, 266);
+            this.cmbList.Name = "cmbList";
+            this.cmbList.Size = new System.Drawing.Size(166, 23);
+            this.cmbList.TabIndex = 37;
+            this.cmbList.SelectedIndexChanged += new System.EventHandler(this.cmbList_SelectedIndexChanged);
             // 
             // FrmStockControl
             // 
@@ -337,6 +354,7 @@ namespace StockControl
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ClientSize = new System.Drawing.Size(1465, 786);
+            this.Controls.Add(this.cmbList);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.lblUser);
@@ -405,6 +423,7 @@ namespace StockControl
         private System.Windows.Forms.Label lblUser;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.ComboBox cmbList;
     }
 }
 

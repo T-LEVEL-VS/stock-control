@@ -9,6 +9,9 @@ using System.Threading.Tasks;
 using System.Data.SqlClient;
 using System.Windows.Forms;
 
+
+
+
 namespace StockControl
 {
     public partial class FrmStockControl : Form
@@ -400,6 +403,12 @@ namespace StockControl
         private void txtProdName_TextChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void cmbList_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            
+            
         }
     }
 }
