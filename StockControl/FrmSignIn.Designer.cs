@@ -85,11 +85,12 @@ namespace StockControl
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Showcard Gothic", 48F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label2.Location = new System.Drawing.Point(201, 47);
+            this.label2.Location = new System.Drawing.Point(193, 74);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(343, 79);
             this.label2.TabIndex = 38;
             this.label2.Text = "WELCOME";
+            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // FrmSignin
             // 
