@@ -32,7 +32,13 @@ namespace StockControl
             SqlCommand cmd = new SqlCommand();
             cmd.Connection = cn;
 
-            cmd.CommandText = "INSERT into Customers (Username, Password) VALUES (@Qty, @ProductName, @Cost)";
+            cmd.CommandText = "INSERT into Customers (Username, Password) VALUES (@Username,@Password)";
+            cmd.Parameters.AddWithValue("@Password", Password);
+            cmd.Parameters.AddWithValue("@Username", Username);
+
+            cn.Open();
+            cmd.ExecuteNonQuery();
+            cn.Close();
 
             this.Hide();
             FrmHome f1 = new FrmHome();
