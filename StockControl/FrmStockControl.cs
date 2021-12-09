@@ -391,5 +391,15 @@ namespace StockControl
 
             }
         }
+
+        private void txtCost_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtProdName_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
