@@ -24,5 +24,10 @@ namespace StockControl
             f1.ShowDialog();
             this.Close();
         }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
