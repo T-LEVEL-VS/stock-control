@@ -55,11 +55,11 @@ namespace StockControl
             // 
             // BtnSignIN
             // 
-            this.BtnSignIN.Location = new System.Drawing.Point(309, 275);
+            this.BtnSignIN.Location = new System.Drawing.Point(321, 235);
             this.BtnSignIN.Name = "BtnSignIN";
             this.BtnSignIN.Size = new System.Drawing.Size(96, 37);
             this.BtnSignIN.TabIndex = 2;
-            this.BtnSignIN.Text = "SIGN IN";
+            this.BtnSignIN.Text = "GO";
             this.BtnSignIN.UseVisualStyleBackColor = true;
             this.BtnSignIN.Click += new System.EventHandler(this.BtnSignIN_Click);
             // 
@@ -84,19 +84,19 @@ namespace StockControl
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Showcard Gothic", 48F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label2.Location = new System.Drawing.Point(193, 74);
+            this.label2.Font = new System.Drawing.Font("Eras Medium ITC", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label2.Location = new System.Drawing.Point(314, 114);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(343, 79);
+            this.label2.Size = new System.Drawing.Size(111, 43);
             this.label2.TabIndex = 38;
-            this.label2.Text = "WELCOME";
+            this.label2.Text = "Login";
             this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // FrmSignin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.ClientSize = new System.Drawing.Size(746, 430);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
