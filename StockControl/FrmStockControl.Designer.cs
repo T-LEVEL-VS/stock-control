@@ -62,6 +62,8 @@ namespace StockControl
             this.label2 = new System.Windows.Forms.Label();
             this.progressBar1 = new System.Windows.Forms.ProgressBar();
             this.label3 = new System.Windows.Forms.Label();
+            this.btnStockControlToHome = new System.Windows.Forms.Button();
+            this.btnBackToSignIn = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // contextMenuStrip1
@@ -352,12 +354,34 @@ namespace StockControl
             this.label3.Text = "Stock Updater";
             this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
+            // btnStockControlToHome
+            // 
+            this.btnStockControlToHome.Location = new System.Drawing.Point(1015, 12);
+            this.btnStockControlToHome.Name = "btnStockControlToHome";
+            this.btnStockControlToHome.Size = new System.Drawing.Size(75, 23);
+            this.btnStockControlToHome.TabIndex = 39;
+            this.btnStockControlToHome.Text = "To Home";
+            this.btnStockControlToHome.UseVisualStyleBackColor = true;
+            this.btnStockControlToHome.Click += new System.EventHandler(this.btnBack_Click);
+            // 
+            // btnBackToSignIn
+            // 
+            this.btnBackToSignIn.Location = new System.Drawing.Point(985, 605);
+            this.btnBackToSignIn.Name = "btnBackToSignIn";
+            this.btnBackToSignIn.Size = new System.Drawing.Size(105, 23);
+            this.btnBackToSignIn.TabIndex = 40;
+            this.btnBackToSignIn.Text = "Back to Sign In";
+            this.btnBackToSignIn.UseVisualStyleBackColor = true;
+            this.btnBackToSignIn.Click += new System.EventHandler(this.btnBackToSignIn_Click);
+            // 
             // FrmStockControl
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.ClientSize = new System.Drawing.Size(1113, 786);
+            this.Controls.Add(this.btnBackToSignIn);
+            this.Controls.Add(this.btnStockControlToHome);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.progressBar1);
             this.Controls.Add(this.label2);
@@ -430,6 +454,8 @@ namespace StockControl
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.ProgressBar progressBar1;
         private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Button btnStockControlToHome;
+        private System.Windows.Forms.Button btnBackToSignIn;
     }
 }
 
