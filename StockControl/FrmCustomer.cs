@@ -71,51 +71,51 @@ namespace StockControl
         private void btnBuy_Click(object sender, EventArgs e)
         {
             {
-                string connectionString = "Server=tcp:jkf2331659.database.windows.net,1433;Initial Catalog=StockControl;Persist Security Info=False;User ID=JKF2331659;Password=Barnsley123!;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;";
+                //string connectionString = "Server=tcp:jkf2331659.database.windows.net,1433;Initial Catalog=StockControl;Persist Security Info=False;User ID=JKF2331659;Password=Barnsley123!;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;";
 
 
-                int ID;
-                int Bought;
-                int NewNumber;
+               // int ID;
+                //int Bought;
+                //int NewNumber;
 
-                int StockLevel;
-                IDataRecord r;
+                //int StockLevel;
+                //IDataRecord r;
 
 
-                ID = Convert.ToInt32(txtName.Text);
-                Bought = Convert.ToInt32(txtUser.Text);
+                //ID = Convert.ToInt32(txtName.Text);
+                //Bought = Convert.ToInt32(txtUser.Text);
                 {
-                    string queryString =
-                    "SELECT * FROM Products WHERE ID = @ID";
+                    //string queryString =
+                    //"SELECT * FROM Products WHERE ID = @ID";
 
-                    using (SqlConnection connection =
-                    new SqlConnection(ServerString))
+                    //using (SqlConnection connection =
+                   // new SqlConnection(ServerString))
                     {
-                        SqlCommand command =
-                        new SqlCommand(queryString, connection);
-                        command.Parameters.AddWithValue("@ID", ID);
-                        connection.Open();
+                       // SqlCommand command =
+                        //new SqlCommand(queryString, connection);
+                        //command.Parameters.AddWithValue("@ID", ID);
+                        //connection.Open();
 
-                        SqlDataReader reader = command.ExecuteReader();
+                        //SqlDataReader reader = command.ExecuteReader();
 
-                        while (reader.Read())
+                        //while (reader.Read())
                         {
-                            r = reader;
-                            int c = 0;
-                            txtProdName.Text = r[1].ToString();
+                           // r = reader;
+                           // int c = 0;
+                            //txtProdName.Text = r[1].ToString();
 
-                            txtHowMany.Text = r[2].ToString();
+                           // txtHowMany.Text = r[2].ToString();
 
-                            txtHowMany.Text = r[2].ToString();
+                            //txtHowMany.Text = r[2].ToString();
 
-                            //txtHowMany.Text = c;
-                            c = (int)c - Bought;
+                            ////txtHowMany.Text = c;
+                            //c = (int)c - Bought;
 
                             //MessageBox.Show((string)c);
 
-                            txtPrice.Text = r[3].ToString();
+                           // txtPrice.Text = r[3].ToString();
                         }
-                        reader.Close();
+                       // reader.Close();
 
                         MessageBox.Show("Product Purchased");
                     }
