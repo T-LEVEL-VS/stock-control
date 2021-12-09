@@ -40,12 +40,14 @@ namespace StockControl
             cmd.ExecuteNonQuery();
             cn.Close();
 
+            MessageBox.Show("LOGIN SUCCESSFUL");
+
             this.Hide();
             FrmHome f1 = new FrmHome();
             f1.ShowDialog();
             this.Close();
 
-            MessageBox.Show("LOGIN SUCCESSFUL");
+           
         }
 
         private void textBox2_TextChanged(object sender, EventArgs e)
