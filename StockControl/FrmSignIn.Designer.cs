@@ -31,10 +31,12 @@ namespace StockControl
         {
             this.txtPassword = new System.Windows.Forms.TextBox();
             this.txtUsername = new System.Windows.Forms.TextBox();
-            this.BtnSignIN = new System.Windows.Forms.Button();
+            this.BtnSignin = new System.Windows.Forms.Button();
             this.Lbl_CustomerName = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
+            this.BtnRegister = new System.Windows.Forms.Button();
+            this.label5 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // txtPassword
@@ -52,16 +54,17 @@ namespace StockControl
             this.txtUsername.Name = "txtUsername";
             this.txtUsername.Size = new System.Drawing.Size(100, 23);
             this.txtUsername.TabIndex = 1;
+            this.txtUsername.TextChanged += new System.EventHandler(this.txtUsername_TextChanged);
             // 
-            // BtnSignIN
+            // BtnSignin
             // 
-            this.BtnSignIN.Location = new System.Drawing.Point(321, 235);
-            this.BtnSignIN.Name = "BtnSignIN";
-            this.BtnSignIN.Size = new System.Drawing.Size(96, 37);
-            this.BtnSignIN.TabIndex = 2;
-            this.BtnSignIN.Text = "GO";
-            this.BtnSignIN.UseVisualStyleBackColor = true;
-            this.BtnSignIN.Click += new System.EventHandler(this.BtnSignIN_Click);
+            this.BtnSignin.Location = new System.Drawing.Point(299, 220);
+            this.BtnSignin.Name = "BtnSignin";
+            this.BtnSignin.Size = new System.Drawing.Size(145, 37);
+            this.BtnSignin.TabIndex = 2;
+            this.BtnSignin.Text = "Sign in";
+            this.BtnSignin.UseVisualStyleBackColor = true;
+            this.BtnSignin.Click += new System.EventHandler(this.BtnSignIN_Click);
             // 
             // Lbl_CustomerName
             // 
@@ -92,16 +95,37 @@ namespace StockControl
             this.label2.Text = "Login";
             this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
+            // BtnRegister
+            // 
+            this.BtnRegister.Location = new System.Drawing.Point(299, 319);
+            this.BtnRegister.Name = "BtnRegister";
+            this.BtnRegister.Size = new System.Drawing.Size(145, 41);
+            this.BtnRegister.TabIndex = 58;
+            this.BtnRegister.Text = "Register";
+            this.BtnRegister.UseVisualStyleBackColor = true;
+            this.BtnRegister.Click += new System.EventHandler(this.BtnRegister_Click);
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(299, 301);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(151, 15);
+            this.label5.TabIndex = 57;
+            this.label5.Text = "Need to create an account?";
+            // 
             // FrmSignin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.ClientSize = new System.Drawing.Size(746, 430);
+            this.Controls.Add(this.BtnRegister);
+            this.Controls.Add(this.label5);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.Lbl_CustomerName);
-            this.Controls.Add(this.BtnSignIN);
+            this.Controls.Add(this.BtnSignin);
             this.Controls.Add(this.txtUsername);
             this.Controls.Add(this.txtPassword);
             this.Name = "FrmSignin";
@@ -115,9 +139,11 @@ namespace StockControl
 
         private System.Windows.Forms.TextBox txtPassword;
         private System.Windows.Forms.TextBox txtUsername;
-        private System.Windows.Forms.Button BtnSignIN;
+        private System.Windows.Forms.Button BtnSignin;
         private System.Windows.Forms.Label Lbl_CustomerName;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Button BtnRegister;
+        private System.Windows.Forms.Label label5;
     }
 }
