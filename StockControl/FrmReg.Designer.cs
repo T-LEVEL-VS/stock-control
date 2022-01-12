@@ -65,6 +65,7 @@ namespace StockControl
             this.txtConfirmPassword.PasswordChar = '*';
             this.txtConfirmPassword.Size = new System.Drawing.Size(100, 23);
             this.txtConfirmPassword.TabIndex = 39;
+            this.txtConfirmPassword.TextChanged += new System.EventHandler(this.txtConfirmPassword_TextChanged);
             // 
             // label3
             // 

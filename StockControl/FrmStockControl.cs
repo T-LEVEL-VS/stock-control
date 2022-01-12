@@ -59,39 +59,52 @@ namespace StockControl
             decimal Cost;
 
 
-
-
-
-
-
-            Qty = Convert.ToInt32(txtQty.Text);
-            ProductDesc = Convert.ToString(txtProdDescription.Text);
-            Cost = Convert.ToDecimal(txtCost.Text);
-
-
-
-            //string connectionString = "Server=tcp:jkf2331659.database.windows.net,1433;Initial Catalog=StockControl;Persist Security Info=False;User ID=JKF2331659;Password=Barnsley123!;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;";
-
-
-
+            //open a connection
             SqlConnection cn = new SqlConnection(ServerString);
             SqlCommand cmd = new SqlCommand();
             cmd.Connection = cn;
 
 
+            //string connectionString = "Server=tcp:jkf2331659.database.windows.net,1433;Initial Catalog=StockControl;Persist Security Info=False;User ID=JKF2331659;Password=Barnsley123!;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;";
 
-            cmd.CommandText = "INSERT into Products (Quantity, ProductName, Cost) VALUES (@Qty, @ProductName, @Cost)";
-            cmd.Parameters.AddWithValue("@Qty", Qty);
-            cmd.Parameters.AddWithValue("@ProductName", ProductDesc);
-            cmd.Parameters.AddWithValue("@Cost", Cost);
+            if (txtQty.Text != string.Empty || txtProdDescription.Text != string.Empty || txtCost.Text != string.Empty)//error checking
+            {
+                if (!int.TryParse(txtQty.Text, out Qty))//if entered anything that isnt a number
+                {
+                    MessageBox.Show("Please enter a valid number in the Quantity box.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+                if (!decimal.TryParse(txtCost.Text, out Cost))//if entered anything that isnt a number
+                {
+                    MessageBox.Show("Please enter a valid number in the cost box.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+                else
+                {   //if there are no errors
+                    //define what to enter into the database
+                    Qty = Convert.ToInt32(txtQty.Text);
+                    ProductDesc = Convert.ToString(txtProdDescription.Text);
+                    Cost = Convert.ToDecimal(txtCost.Text);
+
+                    //SQL commands
+                    cmd.CommandText = "INSERT into Products (Quantity, ProductName, Cost) VALUES (@Qty, @ProductName, @Cost)";
+                    cmd.Parameters.AddWithValue("@Qty", Qty);
+                    cmd.Parameters.AddWithValue("@ProductName", ProductDesc);
+                    cmd.Parameters.AddWithValue("@Cost", Cost);
 
 
+                    //close connection
+                    cn.Open();
+                    cmd.ExecuteNonQuery();
+                    cn.Close();
+                    //confirmation
+                    MessageBox.Show("added record");
+                }
+            }
+            else //error
+            {
+                MessageBox.Show("Please enter value in all fields.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
 
-            cn.Open();
-            cmd.ExecuteNonQuery();
-            cn.Close();
 
-            MessageBox.Show("added record");
         }
 
         private void txtProdDescription_TextChanged(object sender, EventArgs e)
@@ -267,7 +280,7 @@ namespace StockControl
 
                         cmd.CommandText = "UPDATE Products SET Quantity = @Qty WHERE ID = @ID";
                         cmd.Parameters.AddWithValue("@ID", ID);
-                        cmd.Parameters.AddWithValue("@Qty",OutOfStock);
+                        cmd.Parameters.AddWithValue("@Qty", OutOfStock);
 
                         cn.Open();
                         cmd.ExecuteNonQuery();
@@ -386,10 +399,10 @@ namespace StockControl
 
                         //txtPrice.Text = r[3].ToString();
                     }
-                        // reader.Close();
+                    // reader.Close();
 
-                        MessageBox.Show("Product Purchased");
-                 
+                    MessageBox.Show("Product Purchased");
+
                 }
 
             }
@@ -407,8 +420,8 @@ namespace StockControl
 
         private void cmbList_SelectedIndexChanged(object sender, EventArgs e)
         {
-            
-            
+
+
         }
 
         private void btnBack_Click(object sender, EventArgs e)

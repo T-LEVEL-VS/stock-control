@@ -74,7 +74,7 @@ namespace StockControl
                 //string connectionString = "Server=tcp:jkf2331659.database.windows.net,1433;Initial Catalog=StockControl;Persist Security Info=False;User ID=JKF2331659;Password=Barnsley123!;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;";
 
 
-               // int ID;
+                // int ID;
                 //int Bought;
                 //int NewNumber;
 
@@ -89,9 +89,9 @@ namespace StockControl
                     //"SELECT * FROM Products WHERE ID = @ID";
 
                     //using (SqlConnection connection =
-                   // new SqlConnection(ServerString))
+                    // new SqlConnection(ServerString))
                     {
-                       // SqlCommand command =
+                        // SqlCommand command =
                         //new SqlCommand(queryString, connection);
                         //command.Parameters.AddWithValue("@ID", ID);
                         //connection.Open();
@@ -100,11 +100,11 @@ namespace StockControl
 
                         //while (reader.Read())
                         {
-                           // r = reader;
-                           // int c = 0;
+                            // r = reader;
+                            // int c = 0;
                             //txtProdName.Text = r[1].ToString();
 
-                           // txtHowMany.Text = r[2].ToString();
+                            // txtHowMany.Text = r[2].ToString();
 
                             //txtHowMany.Text = r[2].ToString();
 
@@ -113,9 +113,9 @@ namespace StockControl
 
                             //MessageBox.Show((string)c);
 
-                           // txtPrice.Text = r[3].ToString();
+                            // txtPrice.Text = r[3].ToString();
                         }
-                       // reader.Close();
+                        // reader.Close();
 
                         MessageBox.Show("Product Purchased");
                     }
